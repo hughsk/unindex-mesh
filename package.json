@@ -1,0 +1,29 @@
+{
+  "name": "unindex-mesh",
+  "description": "Takes a list of vertices and faces, giving you back an array of individual triangles.",
+  "version": "0.0.0",
+  "main": "index.js",
+  "browser": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {},
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://github.com/hughsk)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/unindex-mesh"
+  },
+  "bugs": {
+    "url": "https://github.com/hughsk/unindex-mesh/issues"
+  },
+  "keywords": [
+    "low",
+    "poly",
+    "mesh",
+    "vertices",
+    "faces",
+    "index",
+    "3d",
+    "webgl"
+  ]
+}
