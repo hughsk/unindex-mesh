@@ -2,9 +2,9 @@ module.exports = unindex
 
 function unindex(positions, cells, out) {
   if (positions.positions && positions.cells) {
+    out = cells
     cells = positions.cells
     positions = positions.positions
-    out = cells
   }
 
   out = out || new Float32Array(cells.length * 9)
