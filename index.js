@@ -1,7 +1,14 @@
 module.exports = unindex
 
 function unindex(positions, cells, out) {
+  if (positions.positions && positions.cells) {
+    cells = positions.cells
+    positions = positions.positions
+    out = cells
+  }
+
   out = out || new Float32Array(cells.length * 9)
+
   for (var i = 0, n = 0, l = cells.length; i < l; i += 1) {
     out[n++] = positions[cells[i][0]][0]
     out[n++] = positions[cells[i][0]][1]

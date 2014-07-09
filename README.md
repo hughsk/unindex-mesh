@@ -43,6 +43,18 @@ var lowpoly = unindex(bunny.positions, bunny.cells)
 var lowpolynormals = faceNormals(lowpoly)
 ```
 
+### `require('unindex-mesh')(mesh[, out])`
+
+Alternatively, you can pass in an object with the properties `positions` and
+`cells` in place of the previous `positions` and `faces` arguments respectively.
+
+``` javascript
+var faceNormals = require('mesh-normals')
+var unindex = require('unindex-mesh')
+var lowpoly = unindex(require('bunny'))
+var lowpolynormals = faceNormals(lowpoly)
+```
+
 ## License ##
 
 MIT. See [LICENSE.md](http://github.com/hughsk/unindex-mesh/blob/master/LICENSE.md) for details.
