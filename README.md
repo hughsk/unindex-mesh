@@ -24,11 +24,9 @@ output a `Float32Array` of individual triangles ready to send over to the GPU.
 
 ### `require('unindex-mesh')(positions, faces[, out])` ###
 
-`positions` is an array of vertex positions, with each element being a 3
-element vector.
-
-`faces` is a list of triangular faces, with each element being a 3 element
-vector of integer indexes.
+`positions` is an array of vertex positions and `faces` is a list of faces. The
+number of points for each face and dimension of each position is determined by
+the first position/face supplied.
 
 `out` is an optional argument for including your own array to output the
 result into. If not passed, a `Float32Array` of the correct length will
