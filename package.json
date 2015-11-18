@@ -1,7 +1,7 @@
 {
   "name": "unindex-mesh",
   "description": "Takes a list of vertices and faces, giving you back an array of individual triangles.",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "main": "index.js",
   "browser": "index.js",
   "dependencies": {},
